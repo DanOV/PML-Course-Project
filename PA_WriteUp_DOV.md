@@ -3,7 +3,7 @@ PML-Course-Project
 Practical Machine Learning: WriteUp (DOV)
 ========================================================
 
-The dataset was "cleaned" before loaded in R. Empty cells were substituted by NA's and the first column was eliminated for both csv files.
+The dataset was "cleaned" before load it in R. Empty cells were substituted by NA's and the first column was eliminated for both csv files.
 
 ```{r}
 ## Load DataSet and RData: ##
@@ -22,7 +22,7 @@ summary(train$classe)
 
 Random Forest:
 ========================================================
-The Machine Learning algorithm choosed for this analysis is a random forest. The control was performed using OutOfBag methodology, which leaves 1/3 of the sample during each iteration in order to obtain unbiased estimations for the classification trees. OOB also is used to get estimations of variables importance.
+The Machine Learning algorithm choosed for this analysis is a random forest. The control was performed using OutOfBag (OOB) methodology, which leaves 1/3 of the sample during each iteration in order to obtain unbiased estimations for the classification trees. OOB also is used to get estimations of variables importance.
 
 ```{r}
 ## 1. Random Forest ####
